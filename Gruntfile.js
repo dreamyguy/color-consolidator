@@ -6,11 +6,17 @@ module.exports = function(grunt) {
         uglify = require('./config/uglify'),
         compass = require('./config/compass'),
         watch = require('./config/watch');
+        connect = require('./config/connect');
 
     // Main project configuration.
     grunt.initConfig({
         // Read NPM package information
         pkg: grunt.file.readJSON('package.json'),
+        // configurable paths
+        cfg: {
+            app: 'app',
+            dist: './'
+        },
         // Static code analysis of Javascript
         jshint: jshint,
         // Test Javascript
@@ -19,8 +25,11 @@ module.exports = function(grunt) {
         uglify: uglify.config,
         // Compass
         compass: compass,
+        // Server
+        connect: connect,
         // Watcher
         watch: watch
+
     });
 
     // Load the grunt tasks
@@ -28,15 +37,23 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-indent');
+
+    // Start web server
+    grunt.registerTask('serve', [
+        'connect:livereload',
+        'watch'
+    ]);
 
     // Compile production files
     grunt.registerTask('dist', [
         'jshint',
         'jasmine',
         'uglify:dist',
-        'compass:dist'
+        'compass:dist',
+        'connect:livereload'
     ]);
 
     // Compile developer friendly environment
@@ -44,7 +61,8 @@ module.exports = function(grunt) {
         'jshint',
         'jasmine',
         'uglify:dev',
-        'compass:dev'
+        'compass:dev',
+        'connect:livereload'
     ]);
 
     // Default task(s).

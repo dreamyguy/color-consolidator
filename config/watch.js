@@ -15,6 +15,18 @@ module.exports = {
     js: {
         files: ['config/*.js', 'app/js/**/*.js'],
         tasks: ['jshint', 'jasmine', 'uglify:dist']
+    },
+
+    livereload: {
+        options: {
+            livereload: '<%= connect.options.livereload %>'
+        },
+        files: [
+            '<%= cfg.dist %>/*.html',
+            '<%= cfg.dist %>/{,*/}*.css',
+            '<%= cfg.dist %>/scripts/{,*/}*.js',
+            '<%= cfg.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
+        ]
     }
 
 };
