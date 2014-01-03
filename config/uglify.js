@@ -1,17 +1,18 @@
 var _ = require('underscore');
 
 var files = {
-    top: {
-        'src/js/js_top.js': [
-            'app/js/jquery-2.0.3.min.js',
-            'app/js/angular.min.js',
-            'app/js/angular-resource.min.js',
-            'app/js/firebase.js',
-            'app/js/angularfire.min.js',
-            'app/js/modernizr.custom.49435.js',
-            'app/js/modernizr.ios.js'
-        ]
-    },
+//  top: {
+//      'src/js/js_top.js': [
+//          'app/js/jquery-2.0.3.min.js',
+//          'app/js/angular.min.js',
+//          'app/js/angular-route.js',
+//          'app/js/angular-resource.min.js',
+//          'app/js/firebase.js',
+//          'app/js/angularfire.min.js',
+//          'app/js/modernizr.custom.49435.js',
+//          'app/js/modernizr.ios.js'
+//      ]
+//  },
     bottom: {
         'src/js/js_bottom.js': [
             'app/js/app.js',
