@@ -3,7 +3,7 @@ var _ = require('underscore');
 var files = {
     top: {
         'src/js/js_top.js': [
-            'app/js/jquery-1.10.2.min.js',
+            'app/js/jquery-2.0.3.min.js',
             'app/js/angular.min.js',
             'app/js/angular-resource.min.js',
             'app/js/firebase.js',
