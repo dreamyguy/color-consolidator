@@ -1,37 +1,37 @@
 @font-face {
   font-family: 'DobraMedium';
-  src: url("../../fonts/dobra-medium-DobraMedium.eot");
-  src: url("../../fonts/dobra-medium-DobraMedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/dobra-medium-DobraMedium.woff") format("woff"), url("../../fonts/dobra-medium-DobraMedium.ttf") format("truetype"), url("../../fonts/dobra-medium-DobraMedium.svg#DobraMedium") format("svg");
+  src: url("../fonts/dobra-medium-DobraMedium.eot");
+  src: url("../fonts/dobra-medium-DobraMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/dobra-medium-DobraMedium.woff") format("woff"), url("../fonts/dobra-medium-DobraMedium.ttf") format("truetype"), url("../fonts/dobra-medium-DobraMedium.svg#DobraMedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'DobraSlabMedium';
-  src: url("../../fonts/dobraslab-medium-DobraSlab.eot");
-  src: url("../../fonts/dobraslab-medium-DobraSlab.eot?#iefix") format("embedded-opentype"), url("../../fonts/dobraslab-medium-DobraSlab.woff") format("woff"), url("../../fonts/dobraslab-medium-DobraSlab.ttf") format("truetype"), url("../../fonts/dobraslab-medium-DobraSlab.svg#DobraSlabMedium") format("svg");
+  src: url("../fonts/dobraslab-medium-DobraSlab.eot");
+  src: url("../fonts/dobraslab-medium-DobraSlab.eot?#iefix") format("embedded-opentype"), url("../fonts/dobraslab-medium-DobraSlab.woff") format("woff"), url("../fonts/dobraslab-medium-DobraSlab.ttf") format("truetype"), url("../fonts/dobraslab-medium-DobraSlab.svg#DobraSlabMedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'DobraBook';
-  src: url("../../fonts/dobra-book-DobraBook.eot");
-  src: url("../../fonts/dobra-book-DobraBook.eot?#iefix") format("embedded-opentype"), url("../../fonts/dobra-book-DobraBook.woff") format("woff"), url("../../fonts/dobra-book-DobraBook.ttf") format("truetype"), url("../../fonts/dobra-book-DobraBook.svg#DobraBook") format("svg");
+  src: url("../fonts/dobra-book-DobraBook.eot");
+  src: url("../fonts/dobra-book-DobraBook.eot?#iefix") format("embedded-opentype"), url("../fonts/dobra-book-DobraBook.woff") format("woff"), url("../fonts/dobra-book-DobraBook.ttf") format("truetype"), url("../fonts/dobra-book-DobraBook.svg#DobraBook") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 .wf-active .dobra-medium {
-  font-family: 'DobraMedium', arial, sans-serif;
+  font-family: "DobraMedium", arial, sans-serif;
 }
 
 .wf-active .dobra-slabmedium {
-  font-family: 'DobraSlabMedium', arial, sans-serif;
+  font-family: "DobraSlabMedium", arial, sans-serif;
 }
 
 .wf-active .dobra-book {
-  font-family: 'DobraBook', arial, sans-serif;
+  font-family: "DobraBook", arial, sans-serif;
 }
 
 .wf-loading .dobra-medium {
@@ -59,15 +59,15 @@
 }
 
 .dobra-medium {
-  font-family: 'DobraMedium', arial, sans-serif;
+  font-family: "DobraMedium", arial, sans-serif;
 }
 
 .dobra-slabmedium {
-  font-family: 'DobraSlabMedium', arial, sans-serif;
+  font-family: "DobraSlabMedium", arial, sans-serif;
 }
 
 .dobra-book {
-  font-family: 'DobraBook', arial, sans-serif;
+  font-family: "DobraBook", arial, sans-serif;
 }
 
 /*
@@ -76,8 +76,8 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../fonts/fontawesome-webfont.eot?v=4.0.3");
-  src: url("../../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -142,8 +142,8 @@
 }
 
 .fa-border {
-  padding: .2em .25em .15em;
-  border: solid .08em #eee;
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eeeeee;
   border-radius: .1em;
 }
 
