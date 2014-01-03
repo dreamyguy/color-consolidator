@@ -4,7 +4,8 @@
         <input type="text" class="form-control input-lg" name="search-form" ng-model="search" placeholder="Search">
     </div>
 </form>
-<table class="table">
+<div class="table-responsive borderless">
+<table class="table table-striped borderless">
     <thead>
         <tr>
             <th>Project</th>
@@ -16,15 +17,16 @@
     </thead>
     <tbody>
         <tr ng-repeat="project in projects | orderByPriority | filter:search | orderBy:'name'">
-            <td>
+            <td class="borderless">
                 <a href="{{project.site}}" target="_blank">{{project.name}}</a>
             </td>
-            <td>
+            <td class="borderless">
                 {{project.description}}
             </td>
-            <td>
+            <td class="borderless">
                 <a href="#/edit/{{project.$id}}"><i class="fa fa-pencil"></i></a>
             </td>
         </tr>
     </tbody>
 </table>
+</div>

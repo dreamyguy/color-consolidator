@@ -6674,3 +6674,20 @@ th.hidden-lg, td.hidden-lg {
 /* --------------------------------------------
 ::::::: main styles :::::::::::::::::::::::::::
 ----------------------------------------------- */
+th {
+  font-weight: bold;
+}
+
+.page {
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 20px;
+}
+
+.borderless {
+  border: none!important;
+}
+
+.centered {
+  text-align: center;
+}
