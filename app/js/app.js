@@ -10,7 +10,7 @@ function firebaseConn() {
         if (connectedSnap.val() === true) {
             console.log("we're connected to Firebase!");
         } else {
-            console.log("we're disconnected to Firebase!");
+            console.log("we're disconnected from Firebase!");
         }
     });
 }
