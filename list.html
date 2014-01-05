@@ -16,15 +16,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="project in projects | orderByPriority | filter:search | orderBy:'name'">
+        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:'name'">
             <td class="borderless">
-                <a href="{{project.site}}" target="_blank">{{project.name}}</a>
+                <a href="{{item.site}}" target="_blank">{{item.name}}</a>
             </td>
             <td class="borderless">
-                {{project.description}}
+                {{item.description}}
             </td>
             <td class="borderless">
-                <a href="#/edit/{{project.$id}}"><i class="fa fa-pencil"></i></a>
+                <a href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
             </td>
         </tr>
     </tbody>

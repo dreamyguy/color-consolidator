@@ -30,7 +30,7 @@ myAppModule.config(function($routeProvider) {
         controller:'ListCtrl',
         templateUrl:'list.html'
     })
-    .when('/edit/:projectId', {
+    .when('/edit/:itemId', {
         controller:'EditCtrl',
         templateUrl:'detail.html'
     })
@@ -45,7 +45,7 @@ myAppModule.config(function($routeProvider) {
 
 myAppModule.controller('ListCtrl', function($scope, ccColors) {
     firebaseConn();
-    $scope.projects = ccColors;
+    $scope.colors = ccColors;
 });
 
 myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, ccColors) {
@@ -59,8 +59,8 @@ myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, ccCol
 
 myAppModule.controller('EditCtrl', function($scope, $location, $routeParams, $firebase, fbURL) {
     firebaseConn();
-    var projectUrl = fbURL + $routeParams.projectId;
-    $scope.ccApp = $firebase(new Firebase(projectUrl));
+    var itemUrl = fbURL + $routeParams.itemId;
+    $scope.ccApp = $firebase(new Firebase(itemUrl));
     $scope.destroy = function() {
         $scope.ccApp.$remove();
         $location.path('/');
