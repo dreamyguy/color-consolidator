@@ -1,20 +1,20 @@
 <form class="form-group" name="myForm">
     <div class="form-group" ng-class="{error: myForm.name.$invalid}">
         <label class="control-label" for="name">Name</label>
-        <input type="text" class="form-control" name="name" ng-model="project.name" required>
+        <input type="text" class="form-control" name="name" ng-model="ccApp.name" required>
         <span class="help-block" ng-show="myForm.name.$error.required">Required</span>
     </div>
     <div class="form-group" ng-class="{error: myForm.site.$invalid}">
         <label class="control-label" for="site">Site URL</label>
-        <input type="url" class="form-control" name="site" ng-model="project.site" required>
+        <input type="url" class="form-control" name="site" ng-model="ccApp.site" required>
         <span class="help-block" ng-show="myForm.site.$error.required">Required</span>
         <span class="help-block" ng-show="myForm.site.$error.url">Not a URL</span>
     </div>
     <div class="form-group">
         <label for="description">Description</label>
-        <textarea class="form-control" name="description" ng-model="project.description"></textarea>
+        <textarea class="form-control" name="description" ng-model="ccApp.description"></textarea>
     </div>
     <a href="#/" class="btn btn-default">Cancel</a>
     <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="myForm.$invalid">Save</button>
-    <button type="button" class="btn btn-danger" ng-click="destroy()" ng-show="project.$remove">Delete</button>
+    <button type="button" class="btn btn-danger" ng-click="destroy()" ng-show="ccApp.$remove">Delete</button>
 </form>
