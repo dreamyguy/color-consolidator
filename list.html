@@ -1,6 +1,6 @@
 <form role="form">
     <div class="form-group">
-        <label for="search-form" class="sr-only">Email address</label>
+        <label for="search-form" class="sr-only">Search for existing colors</label>
         <input type="text" class="form-control input-lg" name="search-form" ng-model="search" placeholder="Search">
     </div>
 </form>
@@ -8,22 +8,23 @@
 <table class="table table-striped borderless">
     <thead>
         <tr>
-            <th>Project</th>
-            <th>Description</th>
+            <th>Variable Name</th>
+            <th>Color hex/rgba</th>
             <th>
-                <a href="#/new"><i class="fa fa-plus"></i></a>
+                <a href="#/new"><i class="fa fa-plus"></i> Add</a>
             </th>
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:'name'">
+        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:'colorVariable'">
             <td class="borderless">
-                <a href="{{item.site}}" target="_blank">{{item.name}}</a>
+                {{item.colorVariable}}
             </td>
             <td class="borderless">
-                {{item.description}}
+                {{item.colorCode}}
             </td>
-            <td class="borderless">
+            <td class="borderless" style="background-color: {{item.colorCode}}"></td>
+            <td class="borderless" style="text-align: center;">
                 <a href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
             </td>
         </tr>
