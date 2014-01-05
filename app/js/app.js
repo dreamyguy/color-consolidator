@@ -5,7 +5,7 @@ function hw() {
 
 // check connection status to Firebase
 function firebaseConn() {
-    var firebaseRef = new Firebase('https://color-consolidator.firebaseio.com');
+    var firebaseRef = new Firebase('https://color-consolidator.firebaseio.com/');
     firebaseRef.child('.info/connected').on('value', function(connectedSnap) {
         if (connectedSnap.val() === true) {
             console.log("we're connected to Firebase!");
@@ -18,7 +18,7 @@ function firebaseConn() {
 // the app!
 var myAppModule = angular.module('project', ['ngRoute', 'firebase'])
 
-.value('fbURL', 'https://color-consolidator.firebaseio.com')
+.value('fbURL', 'https://color-consolidator.firebaseio.com/')
 
 .factory('Projects', function($firebase, fbURL) {
     return $firebase(new Firebase(fbURL));
