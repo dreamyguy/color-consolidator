@@ -20,7 +20,7 @@ var myAppModule = angular.module('ccApp', ['ngRoute', 'firebase'])
 
 .value('fbURL', 'https://color-consolidator.firebaseio.com')
 
-.factory('Projects', function($firebase, fbURL) {
+.factory('ccColors', function($firebase, fbURL) {
     return $firebase(new Firebase(fbURL));
 });
 
@@ -43,15 +43,15 @@ myAppModule.config(function($routeProvider) {
     });
 });
 
-myAppModule.controller('ListCtrl', function($scope, Projects) {
+myAppModule.controller('ListCtrl', function($scope, ccColors) {
     firebaseConn();
-    $scope.projects = Projects;
+    $scope.projects = ccColors;
 });
 
-myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, Projects) {
+myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, ccColors) {
     firebaseConn();
     $scope.save = function() {
-        Projects.$add($scope.ccApp, function() {
+        ccColors.$add($scope.ccApp, function() {
             $timeout(function() { $location.path('/'); });
         });
     };
