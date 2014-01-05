@@ -1,13 +1,22 @@
 <form class="form-group" name="myForm">
-    <div class="form-group" ng-class="{error: myForm.colorVariable.$invalid}">
-        <label class="control-label" for="colorVariable">Color Variable Name</label>
-        <input type="text" class="form-control" name="colorVariable" ng-model="ccApp.colorVariable" required>
-        <span class="help-block" ng-show="myForm.colorVariable.$error.required">Required</span>
-    </div>
     <div class="form-group" ng-class="{error: myForm.colorCode.$invalid}">
         <label class="control-label" for="colorCode">Color Code (HEX or RGBA)</label>
         <input type="text" class="form-control" name="colorCode" ng-model="ccApp.colorCode" required>
         <span class="help-block" ng-show="myForm.colorCode.$error.required">Required</span>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="colorPreview">Color Preview</label>
+        <div class="form-control" name="colorPreview" style="background-color: {{ccApp.colorCode}}"></div>
+    </div>
+    <div class="form-group" ng-class="{error: myForm.colorFamily.$invalid}">
+        <label class="control-label" for="colorFamily">Color Family</label>
+        <input type="text" class="form-control" name="colorFamily" ng-model="ccApp.colorFamily" required>
+        <span class="help-block" ng-show="myForm.colorFamily.$error.required">Required</span>
+    </div>
+    <div class="form-group" ng-class="{error: myForm.colorVariable.$invalid}">
+        <label class="control-label" for="colorVariable">Color Variable Name</label>
+        <input type="text" class="form-control" name="colorVariable" ng-model="ccApp.colorVariable" required>
+        <span class="help-block" ng-show="myForm.colorVariable.$error.required">Required</span>
     </div>
     <a href="#/" class="btn btn-default">Cancel</a>
     <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="myForm.$invalid">Save</button>

@@ -8,15 +8,20 @@
 <table class="table table-striped borderless">
     <thead>
         <tr>
-            <th>Variable Name</th>
-            <th>Color hex/rgba</th>
+            <th>Color Family</th>
+            <th>Color Variable</th>
+            <th>Color HEX/RGBA</th>
+            <th>Color Preview</th>
             <th>
                 <a href="#/new"><i class="fa fa-plus"></i> Add</a>
             </th>
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:'colorVariable'">
+        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:['colorFamily','colorCode']">
+            <td class="borderless">
+                {{item.colorFamily}}
+            </td>
             <td class="borderless">
                 {{item.colorVariable}}
             </td>
