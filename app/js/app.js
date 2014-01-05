@@ -16,7 +16,7 @@ function firebaseConn() {
 }
 
 // the app!
-var myAppModule = angular.module('project', ['ngRoute', 'firebase'])
+var myAppModule = angular.module('ccApp', ['ngRoute', 'firebase'])
 
 .value('fbURL', 'https://color-consolidator.firebaseio.com')
 
@@ -51,7 +51,7 @@ myAppModule.controller('ListCtrl', function($scope, Projects) {
 myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, Projects) {
     firebaseConn();
     $scope.save = function() {
-        Projects.$add($scope.project, function() {
+        Projects.$add($scope.ccApp, function() {
             $timeout(function() { $location.path('/'); });
         });
     };
@@ -60,13 +60,13 @@ myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, Proje
 myAppModule.controller('EditCtrl', function($scope, $location, $routeParams, $firebase, fbURL) {
     firebaseConn();
     var projectUrl = fbURL + $routeParams.projectId;
-    $scope.project = $firebase(new Firebase(projectUrl));
+    $scope.ccApp = $firebase(new Firebase(projectUrl));
     $scope.destroy = function() {
-        $scope.project.$remove();
+        $scope.ccApp.$remove();
         $location.path('/');
     };
     $scope.save = function() {
-        $scope.project.$save();
+        $scope.ccApp.$save();
         $location.path('/');
     };
 });
