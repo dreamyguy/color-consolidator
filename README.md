@@ -23,7 +23,7 @@ The app is a combination of [AngularJS][1] & [Firebase][2] goodness. It's connec
 
 For testing purposes, the app should pretty much work out of the box. Just open `index.html` and smile.
 
-If you would like to customize it and make it work for your own ends - like maintaining your own set of colors with your own team - then I would highly recommend using [Grunt][3] as a way to speed the development. To do that, you'll need to install the dependencies it needs to work locally, by navigating to the directory you've cloned this repository and running:
+If you would like to customize it and make it work for your own ends - like maintaining your own set of colors with your own team - then I would highly recommend using [Grunt][3] as a way to speed the development. To do that, you'll need to install the dependencies it needs to work locally, by navigating to the directory you've cloned this repository to and running:
 
 ```shell
 npm install
@@ -39,7 +39,20 @@ grunt serve
 
 If you haven't used **Grunt** before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
-## Developing the App further
+### Making it to your own
+
+To make this app _your own_, you'll need to do 3 things:
+
+1. Update the *Firebase* URL `https://color-consolidator.firebaseio.com/` on `app/js/app.js` with your own.
+    * The service is free, unless you're into something really big (free up to 5 GB Data Transfer, 50 Max Connections, 100 MB Data Storage).
+2. Change the structure & data of your *Firebase* so that it accommodates to your needs.
+    * The easiest way to do that is by creating a `JSON` file and importing it into the *Firebase*.
+    * Use the [provided sample](https://github.com/dreamyguy/color-consolidator/blob/master/sample/colors.json) `JSON` as a guide.
+3. Change the markup on both `list.html` and `detail.html` so that it reflects the structure of your *Firebase*.
+
+> Make sure you don't forget the trailing slash on the *Firebase* URL, otherwise the app might not work as expected!
+
+## Taking it further
 
 You're welcome to fork this repo, create issues and pull requests!
 
