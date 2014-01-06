@@ -10,14 +10,14 @@ The app is a combination of [AngularJS][1] & [Firebase][2] goodness. It's connec
 
 ###The requirements for the application were:
 
-- All colors already added to the Consolidator should be viewed at a glance.
-- It should be simple to search for existing colors.
--- By color's CSS Name, HEX or RGBA (HEX should be used instead of RGB).
--- By color family (added manually to group similar color groups together).
--- By color variable name.
-- It should be simple to add colors.
-- It should be simple to edit colors.
-- It should be possible to delete colors, through the edit dialog.
+* All colors already added to the Consolidator should be viewed at a glance.
+* It should be simple to search for existing colors.
+    * By color's CSS Name, HEX or RGBA (HEX should be used instead of RGB).
+    * By color family (added manually to group similar color groups together).
+    * By color variable name.
+* It should be simple to add colors.
+* It should be simple to edit colors.
+* It should be possible to delete colors, through the edit dialog.
 
 ## Getting started
 
