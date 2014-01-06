@@ -45,12 +45,11 @@ To make this app _your own_, you'll need to do 3 things:
 
 1. Update the *Firebase* URL `https://color-consolidator.firebaseio.com/` on `app/js/app.js` with your own *Firebase* URL.
     * The service is free, unless you're into something really big (free up to 5 GB Data Transfer, 50 Max Connections, 100 MB Data Storage).
+    * Make sure you don't forget the trailing slash on the *Firebase* URL, otherwise the app won't work as expected!
 2. Change the structure & data of your *Firebase* so that it accommodates to your needs.
     * The easiest way to do that is by creating a `JSON` file and importing it into the *Firebase*.
     * Use the [provided sample](https://github.com/dreamyguy/color-consolidator/blob/master/sample/colors.json) `JSON` as a guide.
 3. Change the markup on both `list.html` and `detail.html` so that it reflects the structure of your *Firebase*.
-
-> Make sure you don't forget the trailing slash on the *Firebase* URL, otherwise the app won't work as expected!
 
 ## Taking it further
 
