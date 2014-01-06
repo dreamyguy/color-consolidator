@@ -1,6 +1,6 @@
 <form class="form-group" name="myForm">
     <div class="form-group" ng-class="{error: myForm.colorCode.$invalid}">
-        <label class="control-label" for="colorCode">Color Code (HEX or RGBA)</label>
+        <label class="control-label" for="colorCode">Color Code (CSS Name, HEX or RGBA)</label>
         <input type="text" class="form-control" name="colorCode" ng-model="ccApp.colorCode" required>
         <span class="help-block" ng-show="myForm.colorCode.$error.required">Required</span>
     </div>
