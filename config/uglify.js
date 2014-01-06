@@ -7,8 +7,6 @@ var files = {
             'app/js/angular.min.js',
             'app/js/angular-route.min.js',
             'app/js/angular-resource.min.js',
-//          'app/js/firebase.js',
-//          'app/js/angularfire.min.js',
             'app/js/modernizr.custom.49435.js',
             'app/js/modernizr.ios.js',
             'app/js/bootstrap.min.js'
