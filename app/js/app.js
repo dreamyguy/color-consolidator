@@ -38,6 +38,10 @@ myAppModule.config(function($routeProvider) {
         controller:'CreateCtrl',
         templateUrl:'detail.html'
     })
+    .when('/output', {
+        controller:'ListCtrl',
+        templateUrl:'colors.html'
+    })
     .otherwise({
         redirectTo:'/'
     });
