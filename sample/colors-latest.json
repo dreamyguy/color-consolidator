@@ -1,0 +1,422 @@
+{
+  "-JCZdvyG3J5_CCNiz_ob" : {
+    "colorCode" : "black",
+    "colorVariable" : "$cl-black",
+    "colorFamily" : "gray"
+  },
+  "-JCZdtom-Hrc_34IXrPv" : {
+    "colorCode" : "white",
+    "colorVariable" : "$cl-white",
+    "colorFamily" : "gray"
+  },
+  "-JCTtWrJsJPMKWsnOFLr" : {
+    "colorCode" : "blue",
+    "colorVariable" : "$cl-blue-000",
+    "colorFamily" : "blue"
+  },
+  "-JCZdf5SVgKGk0mA65mE" : {
+    "colorCode" : "#0000cc",
+    "colorVariable" : "$cl-blue-010",
+    "colorFamily" : "blue"
+  },
+  "-JCZdR7Do4WugHXerVjw" : {
+    "colorCode" : "#0000ee",
+    "colorVariable" : "$cl-blue-020",
+    "colorFamily" : "blue"
+  },
+  "-JCZd8jDpRy-kHZZ6llg" : {
+    "colorCode" : "#2191cb",
+    "colorVariable" : "$cl-blue-040",
+    "colorFamily" : "blue"
+  },
+  "-JCZdqmvgmCbPi_yp8_O" : {
+    "colorCode" : "#238cb9",
+    "colorVariable" : "$cl-blue-050",
+    "colorFamily" : "blue"
+  },
+  "-JCZeHYha2mMECrWjgd6" : {
+    "colorCode" : "#50b1e2",
+    "colorVariable" : "$cl-blue-060",
+    "colorFamily" : "blue"
+  },
+  "-JCZd3iFWGfeZ8EssIIY" : {
+    "colorCode" : "#55616e",
+    "colorVariable" : "$cl-blue-070",
+    "colorFamily" : "blue"
+  },
+  "-JCTtWxl55rMKj3cdFfJ" : {
+    "colorCode" : "#e0e8ea",
+    "colorVariable" : "$cl-blue-080",
+    "colorFamily" : "blue"
+  },
+  "-JCTtWtYBmyT4vA42tdr" : {
+    "colorCode" : "#edf7f4",
+    "colorVariable" : "$cl-blue-090",
+    "colorFamily" : "blue"
+  },
+  "-JCZdUp0H7ORvhX9JqSc" : {
+    "colorCode" : "#101010",
+    "colorVariable" : "$cl-gray-010",
+    "colorFamily" : "gray"
+  },
+  "-JCZe69lcjCAwRXC_zTA" : {
+    "colorCode" : "#222222",
+    "colorVariable" : "$cl-gray-020",
+    "colorFamily" : "gray"
+  },
+  "-JCZdzBGsS9cZLFo_2e5" : {
+    "colorCode" : "#242424",
+    "colorVariable" : "$cl-gray-030",
+    "colorFamily" : "gray"
+  },
+  "-JCZePrpr253WucvU-ZP" : {
+    "colorCode" : "#313131",
+    "colorVariable" : "$cl-gray-040",
+    "colorFamily" : "gray"
+  },
+  "-JCZdkagGVzXqOPAnDCD" : {
+    "colorCode" : "#333333",
+    "colorVariable" : "$cl-gray-050",
+    "colorFamily" : "gray"
+  },
+  "-JCTtX80sMKm4EuRucWC" : {
+    "colorCode" : "#343434",
+    "colorVariable" : "$cl-gray-060",
+    "colorFamily" : "gray"
+  },
+  "-JCZdjSggJREiuA_7OCT" : {
+    "colorCode" : "#3f3f3f",
+    "colorVariable" : "$cl-gray-070",
+    "colorFamily" : "gray"
+  },
+  "-JCTtWs5ubSwD1dJ5Ofz" : {
+    "colorCode" : "#404040",
+    "colorVariable" : "$cl-gray-080",
+    "colorFamily" : "gray"
+  },
+  "-JCZeA606AccM1T1fkRj" : {
+    "colorCode" : "#515151",
+    "colorVariable" : "$cl-gray-090",
+    "colorFamily" : "gray"
+  },
+  "-JCZduyrbEeGqnXYJZvj" : {
+    "colorCode" : "#555555",
+    "colorVariable" : "$cl-gray-100",
+    "colorFamily" : "gray"
+  },
+  "-JCZdwyxGCsgbrRcpgQr" : {
+    "colorCode" : "#616161",
+    "colorVariable" : "$cl-gray-110",
+    "colorFamily" : "gray"
+  },
+  "-JCZd_zWMf0BHGJtv2ub" : {
+    "colorCode" : "#636363",
+    "colorVariable" : "$cl-gray-120",
+    "colorFamily" : "gray"
+  },
+  "-JCZeIZTcuy7vJmq0mwB" : {
+    "colorCode" : "#666666",
+    "colorVariable" : "$cl-gray-130",
+    "colorFamily" : "gray"
+  },
+  "-JCZe-GFPXBmDOdcT_XC" : {
+    "colorCode" : "#717171",
+    "colorVariable" : "$cl-gray-140",
+    "colorFamily" : "gray"
+  },
+  "-JCZe81d-3wovc8uQxjU" : {
+    "colorCode" : "#7d7d7d",
+    "colorVariable" : "$cl-gray-150",
+    "colorFamily" : "gray"
+  },
+  "-JCZdMeSSuBp07ZrXgnU" : {
+    "colorCode" : "#7e7e7e",
+    "colorVariable" : "$cl-gray-160",
+    "colorFamily" : "gray"
+  },
+  "-JCZdgQM04dsM5vdmF5S" : {
+    "colorCode" : "#838383",
+    "colorVariable" : "$cl-gray-170",
+    "colorFamily" : "gray"
+  },
+  "-JCZe90Cf_QSOfpnkfXA" : {
+    "colorCode" : "#888888",
+    "colorVariable" : "$cl-gray-180",
+    "colorFamily" : "gray"
+  },
+  "-JCTtX5yTZm4HRKFuAqr" : {
+    "colorCode" : "#a1a1a1",
+    "colorVariable" : "$cl-gray-190",
+    "colorFamily" : "gray"
+  },
+  "-JCTtWtzHbyD7Gs1ekF_" : {
+    "colorCode" : "#a3a3a3",
+    "colorVariable" : "$cl-gray-200",
+    "colorFamily" : "gray"
+  },
+  "-JCTtWvgsC_BkoGeZajm" : {
+    "colorCode" : "#a5a5a4",
+    "colorVariable" : "$cl-gray-210",
+    "colorFamily" : "gray"
+  },
+  "-JCZeFghF9J-wPFM_sPM" : {
+    "colorCode" : "#a6a6a6",
+    "colorVariable" : "$cl-gray-220",
+    "colorFamily" : "gray"
+  },
+  "-JCZeQmrMt_XhGpuTyIF" : {
+    "colorCode" : "#acacac",
+    "colorVariable" : "$cl-gray-230",
+    "colorFamily" : "gray"
+  },
+  "-JCZeMHbWQR4HidDJhvh" : {
+    "colorCode" : "#b3b3b3",
+    "colorVariable" : "$cl-gray-240",
+    "colorFamily" : "gray"
+  },
+  "-JCTtX6G6TVIJfuCR9do" : {
+    "colorCode" : "#bbbbbb",
+    "colorVariable" : "$cl-gray-250",
+    "colorFamily" : "gray"
+  },
+  "-JCZeEl8rxticwAu8Gbs" : {
+    "colorCode" : "#bfbfbf",
+    "colorVariable" : "$cl-gray-260",
+    "colorFamily" : "gray"
+  },
+  "-JCZeNad6G0pNRwEK11s" : {
+    "colorCode" : "#c0c0c0",
+    "colorVariable" : "$cl-gray-270",
+    "colorFamily" : "gray"
+  },
+  "-JCZe1jY6wIV5Ylm3hnm" : {
+    "colorCode" : "#c1c1c1",
+    "colorVariable" : "$cl-gray-280",
+    "colorFamily" : "gray"
+  },
+  "-JCZdZ-PGJOQEUXVFU7g" : {
+    "colorCode" : "#c2c2c2",
+    "colorVariable" : "$cl-gray-290",
+    "colorFamily" : "gray"
+  },
+  "-JCZdU-Jm4Hb223tWetn" : {
+    "colorCode" : "#cccccc",
+    "colorVariable" : "$cl-gray-300",
+    "colorFamily" : "gray"
+  },
+  "-JCZdVgwBCWGp03DsYU8" : {
+    "colorCode" : "#d1d1d1",
+    "colorVariable" : "$cl-gray-310",
+    "colorFamily" : "gray"
+  },
+  "-JCZdb6BzVu8MqxWFiNq" : {
+    "colorCode" : "#d9d9d9",
+    "colorVariable" : "$cl-gray-320",
+    "colorFamily" : "gray"
+  },
+  "-JCZdWdtipriCYRrj6wx" : {
+    "colorCode" : "#dddddd",
+    "colorVariable" : "$cl-gray-330",
+    "colorFamily" : "gray"
+  },
+  "-JCZdpWX2zoplCLyuKd1" : {
+    "colorCode" : "#dfdfdf",
+    "colorVariable" : "$cl-gray-340",
+    "colorFamily" : "gray"
+  },
+  "-JCZd4os10ANzV9C9NHT" : {
+    "colorCode" : "#e2e2e2",
+    "colorVariable" : "$cl-gray-350",
+    "colorFamily" : "gray"
+  },
+  "-JCZeRmsVqrZQ7QRCHud" : {
+    "colorCode" : "#ededed",
+    "colorVariable" : "$cl-gray-360",
+    "colorFamily" : "gray"
+  },
+  "-JCZdsr62W9jJ6RwP1Fb" : {
+    "colorCode" : "#efefef",
+    "colorVariable" : "$cl-gray-370",
+    "colorFamily" : "gray"
+  },
+  "-JCZdrguKdyr0QxLVpIz" : {
+    "colorCode" : "#f1f1f1",
+    "colorVariable" : "$cl-gray-380",
+    "colorFamily" : "gray"
+  },
+  "-JCTtWrioxjRUT1J3MiL" : {
+    "colorCode" : "#f3f3f3",
+    "colorVariable" : "$cl-gray-390",
+    "colorFamily" : "gray"
+  },
+  "-JCZdZwKEoIH6mD7XOoa" : {
+    "colorCode" : "#f4f4f4",
+    "colorVariable" : "$cl-gray-400",
+    "colorFamily" : "gray"
+  },
+  "-JCZeGcfSkDvKUgtXn5X" : {
+    "colorCode" : "#fefefe",
+    "colorVariable" : "$cl-gray-410",
+    "colorFamily" : "gray"
+  },
+  "-JCZe79Z8zC28eHEM0I5" : {
+    "colorCode" : "rgba(0, 0, 0, 0.1)",
+    "colorVariable" : "$cl-opacity-black-010",
+    "colorFamily" : "gray"
+  },
+  "-JCZd0rxXGj4WTwEXZNG" : {
+    "colorCode" : "rgba(0, 0, 0, 0.2)",
+    "colorVariable" : "$cl-opacity-black-020",
+    "colorFamily" : "gray"
+  },
+  "-JCZdmY5fSk-7lDqLaH4" : {
+    "colorCode" : "rgba(0, 0, 0, 0.3)",
+    "colorVariable" : "$cl-opacity-black-030",
+    "colorFamily" : "gray"
+  },
+  "-JCZd5eg6rC4eH0XyPsR" : {
+    "colorCode" : "rgba(0, 0, 0, 0.7)",
+    "colorVariable" : "$cl-opacity-black-070",
+    "colorFamily" : "gray"
+  },
+  "-JCZdNtAcIaoBe5VPEx-" : {
+    "colorCode" : "rgba(51, 51, 51, 0.8)",
+    "colorVariable" : "$cl-opacity-gray-080",
+    "colorFamily" : "gray"
+  },
+  "-JCZd6WK3CStZ37Et6k1" : {
+    "colorCode" : "rgba(255, 255, 255, 0.85)",
+    "colorVariable" : "$cl-opacity-white-085",
+    "colorFamily" : "gray"
+  },
+  "-JCZe3bo6L8GJtkqYYwY" : {
+    "colorCode" : "#31a000",
+    "colorVariable" : "$cl-misc-030",
+    "colorFamily" : "misc"
+  },
+  "-JCTtWwLYCSkrYa_HRAH" : {
+    "colorCode" : "#551a8b",
+    "colorVariable" : "$cl-misc-040",
+    "colorFamily" : "misc"
+  },
+  "-JCZd7TX_j4xkVS9UZug" : {
+    "colorCode" : "#885418",
+    "colorVariable" : "$cl-misc-060",
+    "colorFamily" : "misc"
+  },
+  "-JCZdQ5rKvI9aO34iCEv" : {
+    "colorCode" : "#c4bba9",
+    "colorVariable" : "$cl-misc-070",
+    "colorFamily" : "misc"
+  },
+  "-JCZde59Xkfv4p5LfL9C" : {
+    "colorCode" : "#dedcd5",
+    "colorVariable" : "$cl-misc-080",
+    "colorFamily" : "misc"
+  },
+  "-JCZeKGv9NtMYIcZwG7H" : {
+    "colorCode" : "#fbf0d8",
+    "colorVariable" : "$cl-misc-090",
+    "colorFamily" : "misc"
+  },
+  "-JCZe58BtpP5Xddw8vuT" : {
+    "colorCode" : "#ff68b4",
+    "colorVariable" : "$cl-misc-110",
+    "colorFamily" : "misc"
+  },
+  "-JCZe0rVukZqOwP0OtAM" : {
+    "colorCode" : "#fffdf8",
+    "colorVariable" : "$cl-misc-130",
+    "colorFamily" : "misc"
+  },
+  "-JCZdy-koMmsL4ljWxVX" : {
+    "colorCode" : "green",
+    "colorVariable" : "$cl-green",
+    "colorFamily" : "misc"
+  },
+  "-JCZeSjIRgDPN2DIxaea" : {
+    "colorCode" : "orange",
+    "colorVariable" : "$cl-orange",
+    "colorFamily" : "misc"
+  },
+  "-JCZdT5y4qrBt0ReKCP4" : {
+    "colorCode" : "purple",
+    "colorVariable" : "$cl-purple",
+    "colorFamily" : "misc"
+  },
+  "-JCZeOhS8tIbHR79CWYW" : {
+    "colorCode" : "teal",
+    "colorVariable" : "$cl-teal",
+    "colorFamily" : "misc"
+  },
+  "-JCZe2iI6lUFlqaJf5dj" : {
+    "colorCode" : "yellow",
+    "colorVariable" : "$cl-yellow",
+    "colorFamily" : "misc"
+  },
+  "-JCZdP1cr5Ghs_6Xr-dp" : {
+    "colorCode" : "red",
+    "colorVariable" : "$cl-red-000",
+    "colorFamily" : "red"
+  },
+  "-JCZdoXxl6cim4SZEddC" : {
+    "colorCode" : "#c23124",
+    "colorVariable" : "$cl-red-010",
+    "colorFamily" : "red"
+  },
+  "-JCZcu0PtnQSqXU6aNkw" : {
+    "colorCode" : "#c4161d",
+    "colorVariable" : "$cl-red-020",
+    "colorFamily" : "red"
+  },
+  "-JCZd9xRDBiSpuk2Ns3V" : {
+    "colorCode" : "#C76261",
+    "colorVariable" : "$cl-red-030",
+    "colorFamily" : "red"
+  },
+  "-JCZdXmGyC-7IOGAd1ty" : {
+    "colorCode" : "#d01e1d",
+    "colorVariable" : "$cl-red-040",
+    "colorFamily" : "red"
+  },
+  "-JCZdlarSyVHtI6xDc_g" : {
+    "colorCode" : "#dc291e",
+    "colorVariable" : "$cl-red-050",
+    "colorFamily" : "red"
+  },
+  "-JCZdcz3P3596u2sDJG5" : {
+    "colorCode" : "#dd1119",
+    "colorVariable" : "$cl-red-060",
+    "colorFamily" : "red"
+  },
+  "-JCZdc2qG4p5FhnowLCc" : {
+    "colorCode" : "#e93b2a",
+    "colorVariable" : "$cl-red-070",
+    "colorFamily" : "red"
+  },
+  "-JCZdS5BgfJ_7BolikHg" : {
+    "colorCode" : "#ebc3c4",
+    "colorVariable" : "$cl-red-080",
+    "colorFamily" : "red"
+  },
+  "-JCZdnbkDxmrJhzFQkZc" : {
+    "colorCode" : "#ed1c24",
+    "colorVariable" : "$cl-red-090",
+    "colorFamily" : "red"
+  },
+  "-JCZeLDFSqWZXP2RSnHX" : {
+    "colorCode" : "#f3dede",
+    "colorVariable" : "$cl-red-110",
+    "colorFamily" : "red"
+  },
+  "-JCZdiVCAy8l2z-X-Jcj" : {
+    "colorCode" : "rgba(210, 2, 2, 1)",
+    "colorVariable" : "$cl-red-120",
+    "colorFamily" : "red"
+  },
+  "-JCZeJRh6mvO0Szwc1Mn" : {
+    "colorCode" : "rgba(246, 43, 43, 1)",
+    "colorVariable" : "$cl-red-130",
+    "colorFamily" : "red"
+  }
+}
