@@ -5,34 +5,34 @@
     </div>
 </form>
 <div class="table-responsive borderless">
-<table class="table table-striped borderless">
-    <thead>
-        <tr>
-            <th>Color Family</th>
-            <th>Color Variable</th>
-            <th>Color Name/HEX/RGBA</th>
-            <th>Color Preview</th>
-            <th class="centered">
-                <a class="btn btn-default" href="#/new"><i class="fa fa-plus"></i> Add</a>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:['colorFamily','colorCode']">
-            <td class="borderless">
-                {{item.colorFamily}}
-            </td>
-            <td class="borderless">
-                {{item.colorVariable}}
-            </td>
-            <td class="borderless">
-                {{item.colorCode}}
-            </td>
-            <td class="borderless" style="background-color: {{item.colorCode}}"></td>
-            <td class="borderless centered">
-                <a class="btn btn-default btn-xs" href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <table class="table table-striped borderless">
+        <thead>
+            <tr>
+                <th>Color Family</th>
+                <th>Color Variable</th>
+                <th>Color Name/HEX/RGBA</th>
+                <th>Color Preview</th>
+                <th class="centered">
+                    <a class="btn btn-default" href="#/new"><i class="fa fa-plus"></i> Add</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:['colorFamily','colorCode']">
+                <td class="borderless">
+                    {{item.colorFamily}}
+                </td>
+                <td class="borderless">
+                    {{item.colorVariable}}
+                </td>
+                <td class="borderless">
+                    {{item.colorCode}}
+                </td>
+                <td class="borderless" style="background-color: {{item.colorCode}}"></td>
+                <td class="borderless centered">
+                    <a class="btn btn-default btn-xs" href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
