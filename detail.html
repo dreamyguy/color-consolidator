@@ -4,6 +4,7 @@
             <thead>
                 <tr>
                     <th>Color Family</th>
+                    <th>Color Product</th>
                     <th>Color Variable</th>
                     <th>Color Name/HEX/RGBA</th>
                     <th>Color Preview</th>
@@ -15,6 +16,9 @@
             <td class="borderless form-group" ng-class="{error: myForm.colorFamily.$invalid}">
                 <input type="text" class="form-control" name="colorFamily" ng-model="ccApp.colorFamily" required>
                 <span class="help-block" ng-show="myForm.colorFamily.$error.required">Required</span>
+            </td>
+            <td class="borderless form-group">
+                <input type="text" class="form-control" name="colorProduct" ng-model="ccApp.colorProduct">
             </td>
             <td class="borderless form-group" ng-class="{error: myForm.colorVariable.$invalid}">
                 <input type="text" class="form-control" name="colorVariable" ng-model="ccApp.colorVariable" required>

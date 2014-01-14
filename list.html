@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Color Family</th>
+                <th>Color Product</th>
                 <th>Color Variable</th>
                 <th>Color Name/HEX/RGBA</th>
                 <th>Color Preview</th>
@@ -19,6 +20,9 @@
             <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:['colorFamily','colorCode']">
                 <td class="borderless">
                     {{item.colorFamily}}
+                </td>
+                <td class="borderless">
+                    {{item.colorProduct}}
                 </td>
                 <td class="borderless">
                     {{item.colorVariable}}
