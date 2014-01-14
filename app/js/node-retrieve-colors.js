@@ -19,12 +19,14 @@ var req = https.request(options, function( res ) {
 
     res.on( 'data', function( d ) {
 
-        // -- process and write data
-        // process.stdout.write( d );
-        // console.log( d );
+    //  -- process and write data
+    //  process.stdout.write( d );                        // gets interrupted by "dest.on('drain', ondrain); has no method 'on'"
+    //  process.stdin.pipe(process.stdout.write ( d ));   // gets interrupted by "dest.on('drain', ondrain); has no method 'on'"
+    //  console.log( d );
 
-        // -- write to file with 'createWriteStream'
-        stream.write( d );
+    //  -- write to file with 'createWriteStream'
+    //  stream.pipe( d );                                 // gets interrupted by "dest.on('drain', ondrain); has no method 'on'"
+        stream.write( d );                                // error: throw arguments[1]; // Unhandled 'error' event
         stream.end();
 
     });
