@@ -11,6 +11,7 @@
                 <th>Color Variable</th>
                 <th>Color Name/HEX/RGBA</th>
                 <th>Color Preview</th>
+                <th class="centered">Widely Used</th>
                 <th class="centered">
                     <a class="btn btn-default" href="#/new"><i class="fa fa-plus"></i> Add</a>
                 </th>
@@ -31,6 +32,9 @@
                     {{item.colorCode}}
                 </td>
                 <td class="borderless" style="background-color: {{item.colorCode}}"></td>
+                <td class="borderless centered">
+                    <input type="checkbox" ng-model="item.colorWidelyUsed">
+                </td>
                 <td class="borderless centered">
                     <a class="btn btn-default btn-xs" href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
                 </td>

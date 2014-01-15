@@ -8,6 +8,7 @@
                     <th>Color Variable</th>
                     <th>Color Name/HEX/RGBA</th>
                     <th>Color Preview</th>
+                    <th class="centered">Widely Used</th>
                     <th class="centered">&nbsp;</th>
                 </tr>
             </thead>
@@ -29,6 +30,9 @@
                 <span class="help-block" ng-show="myForm.colorCode.$error.required">Required</span>
             </td>
             <td class="borderless form-group" style="background-color: {{ccApp.colorCode}}"></td>
+            <td class="borderless centered form-group">
+                <input type="checkbox" class="form-control" name="colorWidelyUsed" ng-model="ccApp.colorWidelyUsed">
+            </td>
             <td class="borderless centered">
                 <div class="btn-group">
                     <a href="#/" class="btn btn-default">Cancel</a>
