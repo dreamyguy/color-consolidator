@@ -8,7 +8,7 @@
                     <th>Variable</th>
                     <th>Name/HEX/RGBA</th>
                     <th class="wide">Preview</th>
-                    <th class="centered"><i class="fa fa-exclamation-triangle"></i></th>
+                    <th class="centered"><i class="fa fa-exclamation-triangle" title="Mark as checked if this color is widely used, so that it can't be deleted."></i></th>
                     <th class="centered">&nbsp;</th>
                 </tr>
             </thead>
@@ -37,7 +37,7 @@
                 <div class="btn-group">
                     <a href="#/" class="btn btn-default">Cancel</a>
                     <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="myForm.$invalid"><i class="fa fa-floppy-o"></i></button>
-                    <button type="button" class="btn btn-danger" ng-click="destroy()" ng-show="ccApp.$remove"><i class="fa fa-trash-o"></i></button>
+                    <button type="button" class="btn btn-danger" ng-click="destroy()" ng-show="ccApp.$remove" ng-if="ccApp.colorWidelyUsed != true"><i class="fa fa-trash-o"></i></button>
                 </div>
             </td>
                 </tr>

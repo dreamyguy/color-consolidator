@@ -11,7 +11,7 @@
                 <th>Variable</th>
                 <th>Name/HEX/RGBA</th>
                 <th class="wide">Preview</th>
-                <th class="centered"><i class="fa fa-exclamation-triangle"></i></th>
+                <th class="centered"><i class="fa fa-exclamation-triangle" title="Widely used colors that may not be deleted!"></i></th>
                 <th class="centered narrow">
                     <a class="btn btn-default" href="#/new"><i class="fa fa-plus"></i> Add</a>
                 </th>
@@ -33,7 +33,9 @@
                 </td>
                 <td class="borderless" style="background-color: {{item.colorCode}}"></td>
                 <td class="borderless centered">
-                    <input type="checkbox" ng-model="item.colorWidelyUsed">
+                    <span ng-if="item.colorWidelyUsed == true">
+                        <i class="fa fa-exclamation-triangle" title="This color is widely used and may not be deleted!"></i>
+                    </span>
                 </td>
                 <td class="borderless centered">
                     <a class="btn btn-default btn-xs" href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
