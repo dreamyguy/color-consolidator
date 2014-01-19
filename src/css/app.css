@@ -6700,6 +6700,10 @@ th {
   width: 3%;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .fa.fa-sort-asc,
 .fa.fa-sort-desc {
   display: none;
