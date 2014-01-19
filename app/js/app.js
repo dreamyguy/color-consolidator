@@ -46,6 +46,20 @@ myAppModule.config(function($routeProvider) {
 myAppModule.controller('ListCtrl', function($scope, ccColors) {
     firebaseConn();
     $scope.colors = ccColors;
+    // make columns sortable
+    $scope.sort = {
+        column: '',
+        descending: false
+    };
+    $scope.changeSorting = function(column) {
+        var sort = $scope.sort;
+        if (sort.column == column) {
+            sort.descending = !sort.descending;
+        } else {
+            sort.column = column;
+            sort.descending = false;
+        }
+    };
 });
 
 myAppModule.controller('CreateCtrl', function($scope, $location, $timeout, ccColors) {

@@ -6,10 +6,18 @@
     <table class="table table-striped borderless">
         <thead>
             <tr>
-                <th>Family</th>
-                <th>Product</th>
-                <th>Variable</th>
-                <th>Name/HEX/RGBA</th>
+                <th ng-click="changeSorting('colorFamily')">
+                    Family
+                </th>
+                <th ng-click="changeSorting('colorProduct')">
+                    Product
+                </th>
+                <th ng-click="changeSorting('colorVariable')">
+                    Variable
+                </th>
+                <th ng-click="changeSorting('colorCode')">
+                    Name/HEX/RGBA
+                </th>
                 <th class="wide">Preview</th>
                 <th class="centered"><i class="fa fa-exclamation-triangle" title="Widely used colors that may not be deleted!"></i></th>
                 <th class="centered narrow">
@@ -18,7 +26,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:['colorFamily','colorCode']">
+            <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:sort.column:sort.descending">
                 <td class="borderless">
                     {{item.colorFamily}}
                 </td>
