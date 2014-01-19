@@ -48,7 +48,7 @@ myAppModule.controller('ListCtrl', function($scope, ccColors) {
     $scope.colors = ccColors;
     // make columns sortable
     $scope.sort = {
-        column: '',
+        column: 'colorFamily',
         descending: false
     };
     $scope.selectedCl = function(column) {
