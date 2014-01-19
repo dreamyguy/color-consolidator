@@ -51,6 +51,9 @@ myAppModule.controller('ListCtrl', function($scope, ccColors) {
         column: '',
         descending: false
     };
+    $scope.selectedCl = function(column) {
+        return column == $scope.sort.column && 'sort-' + $scope.sort.descending;
+    };
     $scope.changeSorting = function(column) {
         var sort = $scope.sort;
         if (sort.column == column) {

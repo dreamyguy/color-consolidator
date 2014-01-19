@@ -6,17 +6,25 @@
     <table class="table table-striped borderless">
         <thead>
             <tr>
-                <th ng-click="changeSorting('colorFamily')">
+                <th ng-click="changeSorting('colorFamily')" ng-class="selectedCl('colorFamily')">
                     Family
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
                 </th>
-                <th ng-click="changeSorting('colorProduct')">
+                <th ng-click="changeSorting('colorProduct')" ng-class="selectedCl('colorProduct')">
                     Product
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
                 </th>
-                <th ng-click="changeSorting('colorVariable')">
+                <th ng-click="changeSorting('colorVariable')" ng-class="selectedCl('colorVariable')">
                     Variable
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
                 </th>
-                <th ng-click="changeSorting('colorCode')">
+                <th ng-click="changeSorting('colorCode')" ng-class="selectedCl('colorCode')">
                     Name/HEX/RGBA
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
                 </th>
                 <th class="wide">Preview</th>
                 <th class="centered"><i class="fa fa-exclamation-triangle" title="Widely used colors that may not be deleted!"></i></th>

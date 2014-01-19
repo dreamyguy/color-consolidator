@@ -6699,3 +6699,20 @@ th {
 .narrow {
   width: 3%;
 }
+
+.fa.fa-sort-asc,
+.fa.fa-sort-desc {
+  display: none;
+  position: relative;
+  left: 2px;
+}
+
+.sort-true .fa.fa-sort-asc {
+  display: inline-block;
+  top: -2px;
+}
+
+.sort-false .fa.fa-sort-desc {
+  display: inline-block;
+  top: 4px;
+}
