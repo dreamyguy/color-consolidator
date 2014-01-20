@@ -57,7 +57,7 @@ You're welcome to fork this repo, create issues and pull requests!
 
 ## Release History
 
- * 2014-01-19   v0.0.2   More + sortable columns, better UX, retrieve remote data with JSON.
+ * 2014-01-19   v0.0.2   More + sortable columns, better UX, save remote JSON to file.
  * 2014-01-06   v0.0.1   First official release. The app has all the initially planned functionality and runs as expected.
  * 2014-01-01   v0.0.0   Repo created.
 
