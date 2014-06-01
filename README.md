@@ -1,6 +1,8 @@
 # Color Consolidator
 
-> An application that helps one to consolidate colors on a styleguide used by several projects and maintained by many
+> Consolidate colors on a styleguide used in several projects and maintained by many
+
+![Color Consolidator](https://raw2.github.com/dreamyguy/color-consolidator/master/docs/color-consolidator.png "Color Consolidator as on release v.0.0.2")
 
 ## Purpose
 
@@ -57,6 +59,7 @@ You're welcome to fork this repo, create issues and pull requests!
 
 ## Release History
 
+ * 2014-01-19   v0.0.2   More + sortable columns, better UX, save remote JSON to file.
  * 2014-01-06   v0.0.1   First official release. The app has all the initially planned functionality and runs as expected.
  * 2014-01-01   v0.0.0   Repo created.
 

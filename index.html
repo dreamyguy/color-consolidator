@@ -3,20 +3,17 @@
 <!--[if IE 7]>         <html ng-app="ccApp" class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
 <!--[if IE 8]>         <html ng-app="ccApp" class="no-js lt-ie9 ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html ng-app="ccApp" class="no-js"> <!--<![endif]-->
-<head>
-    <title>Color Consolidator</title>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="src/css/app.css">
-    <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
-    <script type="text/javascript" src="src/js/js_top.js"></script>
-    <script type="text/javascript" src="app/js/firebase.js"></script>
-    <script type="text/javascript" src="app/js/angularfire.min.js"></script>
-</head>
-<body>
-    <div class="page">
-        <h2 class="centered">Color Consolidator</h2>
-        <div ng-view></div>
-    </div>
-    <script type="text/javascript" src="src/js/js_bottom.js"></script>
-</body>
+    <head>
+        <title>Color Consolidator</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="src/css/app.css">
+        <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
+        <script type="text/javascript" src="src/js/js_top.js"></script>
+        <script type="text/javascript" src="app/js/firebase.js"></script>
+        <script type="text/javascript" src="app/js/angularfire.min.js"></script>
+    </head>
+    <body>
+        <div class="page" ng-view></div>
+        <script type="text/javascript" src="src/js/js_bottom.js"></script>
+    </body>
 </html>

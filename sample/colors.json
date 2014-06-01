@@ -356,67 +356,67 @@
     },
     "-JCZdP1cr5Ghs_6Xr-dp" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-000",
+        "colorVariable" : "$cl-red-000",
         "colorCode" : "red"
     },
     "-JCZdoXxl6cim4SZEddC" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-010",
+        "colorVariable" : "$cl-red-010",
         "colorCode" : "#c23124"
     },
     "-JCZcu0PtnQSqXU6aNkw" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-020",
+        "colorVariable" : "$cl-red-020",
         "colorCode" : "#c4161d"
     },
     "-JCZd9xRDBiSpuk2Ns3V" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-030",
+        "colorVariable" : "$cl-red-030",
         "colorCode" : "#C76261"
     },
     "-JCZdXmGyC-7IOGAd1ty" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-040",
+        "colorVariable" : "$cl-red-040",
         "colorCode" : "#d01e1d"
     },
     "-JCZdlarSyVHtI6xDc_g" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-050",
+        "colorVariable" : "$cl-red-050",
         "colorCode" : "#dc291e"
     },
     "-JCZdcz3P3596u2sDJG5" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-060",
+        "colorVariable" : "$cl-red-060",
         "colorCode" : "#dd1119"
     },
     "-JCZdc2qG4p5FhnowLCc" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-070",
+        "colorVariable" : "$cl-red-070",
         "colorCode" : "#e93b2a"
     },
     "-JCZdS5BgfJ_7BolikHg" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-080",
+        "colorVariable" : "$cl-red-080",
         "colorCode" : "#ebc3c4"
     },
     "-JCZdnbkDxmrJhzFQkZc" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-090",
+        "colorVariable" : "$cl-red-090",
         "colorCode" : "#ed1c24"
     },
     "-JCZeLDFSqWZXP2RSnHX" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-110",
+        "colorVariable" : "$cl-red-110",
         "colorCode" : "#f3dede"
     },
     "-JCZdiVCAy8l2z-X-Jcj" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-120",
+        "colorVariable" : "$cl-red-120",
         "colorCode" : "rgba(210, 2, 2, 1)"
     },
     "-JCZeJRh6mvO0Szwc1Mn" : {
         "colorFamily" : "red", 
-        "colorVariable" : "cl-red-130",
+        "colorVariable" : "$cl-red-130",
         "colorCode" : "rgba(246, 43, 43, 1)"
     }
 }

@@ -1,9 +1,10 @@
 module.exports = {
     src : [
         'app/js/**/*.js',
-        // exclude angular and jquery from jasmine
+        // exclude angular, jquery and node from jasmine
         '!app/js/angular*.js',
-        '!app/js/jquery*.js'
+        '!app/js/jquery*.js',
+        '!app/js/node*.js'
     ],
     options : {
         specs : 'app/js/**/*spec.js',

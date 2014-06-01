@@ -1,38 +1,63 @@
 <form role="form">
-    <div class="form-group">
-        <label for="search-form" class="sr-only">Search for existing colors</label>
-        <input type="text" class="form-control input-lg" name="search-form" ng-model="search" placeholder="Search">
-    </div>
+    <label for="search-form" class="sr-only">Search for existing colors</label>
+    <input type="text" class="form-control input-lg" name="search-form" ng-model="search" placeholder="Search">
 </form>
 <div class="table-responsive borderless">
-<table class="table table-striped borderless">
-    <thead>
-        <tr>
-            <th>Color Family</th>
-            <th>Color Variable</th>
-            <th>Color Name/HEX/RGBA</th>
-            <th>Color Preview</th>
-            <th class="centered">
-                <a href="#/output"><i class="fa fa-eject"></i> Output</a><br/><a href="#/new"><i class="fa fa-plus"></i> Add</a>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:['colorFamily','colorCode']">
-            <td class="borderless">
-                {{item.colorFamily}}
-            </td>
-            <td class="borderless">
-                {{item.colorVariable}}
-            </td>
-            <td class="borderless">
-                {{item.colorCode}}
-            </td>
-            <td class="borderless" style="background-color: {{item.colorCode}}"></td>
-            <td class="borderless centered">
-                <a href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <table class="table table-striped borderless">
+        <thead>
+            <tr>
+                <th class="clickable" ng-click="changeSorting('colorFamily')" ng-class="selectedCl('colorFamily')">
+                    Family
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
+                </th>
+                <th class="clickable" ng-click="changeSorting('colorProduct')" ng-class="selectedCl('colorProduct')">
+                    Product
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
+                </th>
+                <th class="clickable" ng-click="changeSorting('colorVariable')" ng-class="selectedCl('colorVariable')">
+                    Variable
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
+                </th>
+                <th class="clickable" ng-click="changeSorting('colorCode')" ng-class="selectedCl('colorCode')">
+                    Name/HEX/RGBA
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
+                </th>
+                <th class="wide">Preview</th>
+                <th class="centered"><i class="fa fa-exclamation-triangle" title="Widely used colors that may not be deleted!"></i></th>
+                <th class="centered narrow">
+                    <a class="btn btn-default" href="#/new"><i class="fa fa-plus"></i> Add</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in colors | orderByPriority | filter:search | orderBy:sort.column:sort.descending">
+                <td class="borderless">
+                    {{item.colorFamily}}
+                </td>
+                <td class="borderless">
+                    {{item.colorProduct}}
+                </td>
+                <td class="borderless">
+                    {{item.colorVariable}}
+                </td>
+                <td class="borderless">
+                    {{item.colorCode}}
+                </td>
+                <td class="borderless" style="background-color: {{item.colorCode}}"></td>
+                <td class="borderless centered">
+                    <span ng-if="item.colorWidelyUsed == true">
+                        <i class="fa fa-exclamation-triangle" title="This color is widely used and may not be deleted!"></i>
+                    </span>
+                </td>
+                <td class="borderless centered">
+                    <a class="btn btn-default btn-xs" href="#/edit/{{item.$id}}"><i class="fa fa-pencil"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+<footer class="well">Brought to you by <a href="http://dreamyguy.com" target="_blank">Wallace Sidhrée</a>. Full source at <a href="https://github.com/dreamyguy/color-consolidator" target="_blank">Github</a></footer>

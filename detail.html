@@ -1,24 +1,47 @@
 <form class="form-group" name="myForm">
-    <div class="form-group" ng-class="{error: myForm.colorCode.$invalid}">
-        <label class="control-label" for="colorCode">Color Code (CSS Name, HEX or RGBA)</label>
-        <input type="text" class="form-control" name="colorCode" ng-model="ccApp.colorCode" required>
-        <span class="help-block" ng-show="myForm.colorCode.$error.required">Required</span>
+    <div class="table-responsive borderless">
+        <table class="table table-striped borderless">
+            <thead>
+                <tr>
+                    <th>Family</th>
+                    <th>Product</th>
+                    <th>Variable</th>
+                    <th>Name/HEX/RGBA</th>
+                    <th class="wide">Preview</th>
+                    <th class="centered"><i class="fa fa-exclamation-triangle" title="Mark as checked if this color is widely used, so that it can't be deleted."></i></th>
+                    <th class="centered">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+            <td class="borderless form-group" ng-class="{error: myForm.colorFamily.$invalid}">
+                <input type="text" class="form-control" name="colorFamily" ng-model="ccApp.colorFamily" required>
+                <span class="help-block" ng-show="myForm.colorFamily.$error.required">Required</span>
+            </td>
+            <td class="borderless form-group">
+                <input type="text" class="form-control" name="colorProduct" ng-model="ccApp.colorProduct">
+            </td>
+            <td class="borderless form-group" ng-class="{error: myForm.colorVariable.$invalid}">
+                <input type="text" class="form-control" name="colorVariable" ng-model="ccApp.colorVariable" required>
+                <span class="help-block" ng-show="myForm.colorVariable.$error.required">Required</span>
+            </td>
+            <td class="borderless form-group" ng-class="{error: myForm.colorCode.$invalid}">
+                <input type="text" class="form-control" name="colorCode" ng-model="ccApp.colorCode" required>
+                <span class="help-block" ng-show="myForm.colorCode.$error.required">Required</span>
+            </td>
+            <td class="borderless form-group" style="background-color: {{ccApp.colorCode}}"></td>
+            <td class="borderless centered form-group">
+                <input type="checkbox" class="form-control" name="colorWidelyUsed" ng-model="ccApp.colorWidelyUsed">
+            </td>
+            <td class="borderless centered">
+                <div class="btn-group">
+                    <a href="#/" class="btn btn-default">Cancel</a>
+                    <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="myForm.$invalid"><i class="fa fa-floppy-o"></i></button>
+                    <button type="button" class="btn btn-danger" ng-click="destroy()" ng-show="ccApp.$remove" ng-if="ccApp.colorWidelyUsed != true"><i class="fa fa-trash-o"></i></button>
+                </div>
+            </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="form-group">
-        <label class="control-label" for="colorPreview">Color Preview</label>
-        <div class="form-control" name="colorPreview" style="background-color: {{ccApp.colorCode}}"></div>
-    </div>
-    <div class="form-group" ng-class="{error: myForm.colorFamily.$invalid}">
-        <label class="control-label" for="colorFamily">Color Family</label>
-        <input type="text" class="form-control" name="colorFamily" ng-model="ccApp.colorFamily" required>
-        <span class="help-block" ng-show="myForm.colorFamily.$error.required">Required</span>
-    </div>
-    <div class="form-group" ng-class="{error: myForm.colorVariable.$invalid}">
-        <label class="control-label" for="colorVariable">Color Variable Name</label>
-        <input type="text" class="form-control" name="colorVariable" ng-model="ccApp.colorVariable" required>
-        <span class="help-block" ng-show="myForm.colorVariable.$error.required">Required</span>
-    </div>
-    <a href="#/" class="btn btn-default">Cancel</a>
-    <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="myForm.$invalid">Save</button>
-    <button type="button" class="btn btn-danger" ng-click="destroy()" ng-show="ccApp.$remove">Delete</button>
 </form>
