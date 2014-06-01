@@ -5,8 +5,11 @@ module.exports = function(grunt) {
         jasmine = require('./config/jasmine'),
         uglify = require('./config/uglify'),
         compass = require('./config/compass'),
+        connect = require('./config/connect'),
         watch = require('./config/watch');
-        connect = require('./config/connect');
+
+    // Print time taken for tasks to load
+    require('time-grunt')(grunt);
 
     // Main project configuration.
     grunt.initConfig({
@@ -29,7 +32,6 @@ module.exports = function(grunt) {
         connect: connect,
         // Watcher
         watch: watch
-
     });
 
     // Load the grunt tasks

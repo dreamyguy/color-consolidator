@@ -23,7 +23,8 @@
     "grunt-contrib-jasmine": "~0.5.2",
     "underscore": "~1.5.2",
     "angular": "0.0.4",
-    "connect-livereload": "~0.3.1"
+    "connect-livereload": "~0.3.1",
+    "time-grunt": "~0.3.1"
   },
   "engines": {
     "node": ">=0.8.0"
