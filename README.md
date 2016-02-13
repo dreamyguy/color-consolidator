@@ -2,7 +2,7 @@
 
 > Consolidate colors on a styleguide used in several projects and maintained by many
 
-![Color Consolidator](https://raw2.github.com/dreamyguy/color-consolidator/master/docs/color-consolidator.png "Color Consolidator as on release v.0.0.2")
+![Color Consolidator](https://raw.githubusercontent.com/dreamyguy/color-consolidator/master/docs/color-consolidator.png "Color Consolidator as on release v.0.0.2")
 
 ## Purpose
 
